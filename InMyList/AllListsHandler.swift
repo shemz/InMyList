@@ -130,7 +130,7 @@ class AllListsHandler: UICollectionViewController {
         cell.listNameDisplayLabel.layer.cornerRadius = 10
         cell.listNameDisplayLabel.clipsToBounds = true
         cell.backgroundColor = UIColor.clear
-        cell.listNameDisplayLabel.layer.borderColor = UIColor.white.cgColor
+        cell.listNameDisplayLabel.layer.borderColor = UIColor.gray.cgColor
         cell.listNameDisplayLabel.layer.borderWidth = 3
         
         // Configure the cell
@@ -153,6 +153,8 @@ class AllListsHandler: UICollectionViewController {
     
     //The following method will remove selected lists from databse
     func handleDeleteAction(){
+        
+        print("Selected list count: ", selectedMultipleIndexPaths.count )
         
         for i in 1...selectedMultipleIndexPaths.count {
             print("i:",i)

@@ -51,7 +51,7 @@ class TableViewController: UITableViewController {
 //        self.tableView.reloadData()
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = UITableView.automaticDimension
-        
+                
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {

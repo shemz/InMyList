@@ -33,8 +33,6 @@ class ViewController: UIViewController {
         
         print("List name received from allLists: ",listName)
         navigationController?.navigationBar.isHidden = false
-
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont(name: "Superclarendon-Regular", size: 30.0)!]
         
         //displayAlert flag will be set to True from the calling viewcontroller (AllListsHandlerWithFooter) to add item detail to new list
         if displayAlert{
@@ -45,6 +43,14 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = false
+        
+        if self.displayAlert {
+            self.navigationItem.title = "New list"
+        } else {
+            self.navigationItem.title = self.listName
+        }
+        
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20.0, weight: UIFont.Weight.semibold)]
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
