@@ -2,8 +2,8 @@
 //  UserIDManager.swift
 //  InMyList
 //
-//  Created by vignesh ramanathan on 5/6/19.
-//  Copyright © 2019 CK. All rights reserved.
+//  Created by shenbagavalli lakshmanan on 5/6/19.
+//  Copyright © 2019 Shenbagavalli Lakshmanan. All rights reserved.
 //
 
 import Foundation

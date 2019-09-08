@@ -3,7 +3,7 @@
 //  InMyList
 //
 //  Created by Shenbagavalli Lakshmanan on 3/17/19.
-//  Copyright © 2019 CK. All rights reserved.
+//  Copyright © 2019 Shenbagavalli Lakshmanan. All rights reserved.
 //
 
 import UIKit
@@ -11,11 +11,20 @@ import Firebase
 import GoogleSignIn
 
 class SigninViewController: UIViewController, GIDSignInUIDelegate {
+    
+    @IBOutlet weak var customSignIn: UIButton!
+    
+    var googleSignInHandler = GoogleSignInHandler()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        googleSignInHandler.onSuccessfulLogin = { [weak self] in
+            self?.performSegue(withIdentifier: "showListsWithFooter", sender: self)
+        }
+        
         GIDSignIn.sharedInstance()?.uiDelegate = self
+        GIDSignIn.sharedInstance()?.delegate = googleSignInHandler
         customSignIn.layer.cornerRadius = 10
         customSignIn.clipsToBounds = true
         customSignIn.layer.borderWidth = 3
@@ -23,15 +32,10 @@ class SigninViewController: UIViewController, GIDSignInUIDelegate {
         
         //Signin silently
         GIDSignIn.sharedInstance()?.signIn()
-        
+     
     }
     
-//    @IBOutlet weak var signIn: GIDSignInButton!
-  
-    @IBOutlet weak var customSignIn: UIButton!
-    
     @IBAction func googleSignIn(_ sender: Any) {
-            print("Signin called from here")
-            GIDSignIn.sharedInstance()?.signIn()
+        GIDSignIn.sharedInstance()?.signIn()
     }
 }

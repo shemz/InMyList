@@ -10,41 +10,45 @@
 		06FE739FA41E1268FDADF906 /* Pods_InMyList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4A63B41809E8A608353BF1 /* Pods_InMyList.framework */; };
 		2F3E8EEC223C92FC00BF96A0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F3E8EEB223C92FC00BF96A0 /* GoogleService-Info.plist */; };
 		2F4477792235E16000789167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4477782235E16000789167 /* AppDelegate.swift */; };
-		2F44777B2235E16000789167 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44777A2235E16000789167 /* ViewController.swift */; };
 		2F44777E2235E16000789167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F44777C2235E16000789167 /* Main.storyboard */; };
 		2F4477802235E16500789167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F44777F2235E16500789167 /* Assets.xcassets */; };
 		2F4477832235E16500789167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4477812235E16500789167 /* LaunchScreen.storyboard */; };
-		2F66FF11225194EE0001C3F0 /* AllListsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F66FF10225194EE0001C3F0 /* AllListsHandler.swift */; };
-		2F66FF1522519F3F0001C3F0 /* listNameDisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F66FF1422519F3F0001C3F0 /* listNameDisplayCell.swift */; };
+		2F87A5022325C22E0026F088 /* ListNameDisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F87A5012325C22E0026F088 /* ListNameDisplayCell.swift */; };
+		2F87A50A2325C41A0026F088 /* GoogleSignInHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F87A5082325C41A0026F088 /* GoogleSignInHandler.swift */; };
+		2F87A50B2325C41A0026F088 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F87A5092325C41A0026F088 /* SigninViewController.swift */; };
+		2F87A50D2325CCAA0026F088 /* ListInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F87A50C2325CCAA0026F088 /* ListInfoModel.swift */; };
 		2F96A280228130DE004AF805 /* UserIDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F96A27F228130DE004AF805 /* UserIDManager.swift */; };
 		2F96A28622865721004AF805 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F96A28522865721004AF805 /* ProfileViewController.swift */; };
-		2FB3FEEE2236DBD800284EBF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3FEED2236DBD800284EBF /* TableViewController.swift */; };
-		2FC10A752265608D00DFA823 /* AllListsHandlerWithFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC10A742265608D00DFA823 /* AllListsHandlerWithFooter.swift */; };
-		2FEE1214223F2C00008DF8F6 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE1213223F2C00008DF8F6 /* SigninViewController.swift */; };
+		2FAFE4B0232A07450014F19A /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAFE4AF232A07450014F19A /* ToDoItem.swift */; };
 		2FEFE3DB228BAC4400FBAD2B /* UserListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEFE3DA228BAC4400FBAD2B /* UserListManager.swift */; };
-		2FF2176A2237E01D00F60F4C /* ListItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF217692237E01D00F60F4C /* ListItemManager.swift */; };
-		2FFE89E9223748080039985E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE89E8223748080039985E /* CustomTableViewCell.swift */; };
+		2FF9389C2325BE6700043C13 /* AllListContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9389B2325BE6700043C13 /* AllListContainerController.swift */; };
+		2FF9389F2325BF5900043C13 /* ItemsInAListDisplayContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44777A2235E16000789167 /* ItemsInAListDisplayContainer.swift */; };
+		2FF938A02325BF5B00043C13 /* ItemsInAListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3FEED2236DBD800284EBF /* ItemsInAListTableViewController.swift */; };
+		2FF938A22325BFFC00043C13 /* AllListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF938A12325BFFC00043C13 /* AllListCollectionViewController.swift */; };
+		2FFE89E9223748080039985E /* ToDoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE89E8223748080039985E /* ToDoItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F3E8EEB223C92FC00BF96A0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2F4477752235E16000789167 /* InMyList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InMyList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F4477782235E16000789167 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F44777A2235E16000789167 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F44777A2235E16000789167 /* ItemsInAListDisplayContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsInAListDisplayContainer.swift; sourceTree = "<group>"; };
 		2F44777D2235E16000789167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F44777F2235E16500789167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F4477822235E16500789167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F4477842235E16500789167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F66FF10225194EE0001C3F0 /* AllListsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsHandler.swift; sourceTree = "<group>"; };
-		2F66FF1422519F3F0001C3F0 /* listNameDisplayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listNameDisplayCell.swift; sourceTree = "<group>"; };
+		2F87A5012325C22E0026F088 /* ListNameDisplayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListNameDisplayCell.swift; path = ../ListNameDisplayCell.swift; sourceTree = "<group>"; };
+		2F87A5082325C41A0026F088 /* GoogleSignInHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSignInHandler.swift; sourceTree = "<group>"; };
+		2F87A5092325C41A0026F088 /* SigninViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		2F87A50C2325CCAA0026F088 /* ListInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInfoModel.swift; sourceTree = "<group>"; };
 		2F96A27F228130DE004AF805 /* UserIDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIDManager.swift; sourceTree = "<group>"; };
-		2F96A28522865721004AF805 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		2FB3FEED2236DBD800284EBF /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		2FC10A742265608D00DFA823 /* AllListsHandlerWithFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsHandlerWithFooter.swift; sourceTree = "<group>"; };
-		2FEE1213223F2C00008DF8F6 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		2F96A28522865721004AF805 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
+		2FAFE4AF232A07450014F19A /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		2FB3FEED2236DBD800284EBF /* ItemsInAListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsInAListTableViewController.swift; sourceTree = "<group>"; };
 		2FEFE3DA228BAC4400FBAD2B /* UserListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListManager.swift; sourceTree = "<group>"; };
-		2FF217692237E01D00F60F4C /* ListItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemManager.swift; sourceTree = "<group>"; };
-		2FFE89E8223748080039985E /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		2FF9389B2325BE6700043C13 /* AllListContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AllListContainerController.swift; path = ../AllListContainerController.swift; sourceTree = "<group>"; };
+		2FF938A12325BFFC00043C13 /* AllListCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AllListCollectionViewController.swift; path = ../AllListCollectionViewController.swift; sourceTree = "<group>"; };
+		2FFE89E8223748080039985E /* ToDoItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemCell.swift; sourceTree = "<group>"; };
 		7E7CF7939537B9AF0FE28E05 /* Pods-InMyList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InMyList.debug.xcconfig"; path = "Target Support Files/Pods-InMyList/Pods-InMyList.debug.xcconfig"; sourceTree = "<group>"; };
 		8C3670A39DFD4FA3B9C4D4D0 /* Pods-InMyList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InMyList.release.xcconfig"; path = "Target Support Files/Pods-InMyList/Pods-InMyList.release.xcconfig"; sourceTree = "<group>"; };
 		FF4A63B41809E8A608353BF1 /* Pods_InMyList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InMyList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,25 +87,70 @@
 		2F4477772235E16000789167 /* InMyList */ = {
 			isa = PBXGroup;
 			children = (
+				2FAFE4B1232A07610014F19A /* Model Layer */,
+				2F4E8329232A1AE000546761 /* Controllers */,
 				2F4477782235E16000789167 /* AppDelegate.swift */,
-				2F44777A2235E16000789167 /* ViewController.swift */,
-				2FF217692237E01D00F60F4C /* ListItemManager.swift */,
-				2FB3FEED2236DBD800284EBF /* TableViewController.swift */,
-				2F66FF1422519F3F0001C3F0 /* listNameDisplayCell.swift */,
-				2FFE89E8223748080039985E /* CustomTableViewCell.swift */,
 				2F44777C2235E16000789167 /* Main.storyboard */,
-				2FC10A742265608D00DFA823 /* AllListsHandlerWithFooter.swift */,
-				2F66FF10225194EE0001C3F0 /* AllListsHandler.swift */,
-				2FEFE3DA228BAC4400FBAD2B /* UserListManager.swift */,
-				2FEE1213223F2C00008DF8F6 /* SigninViewController.swift */,
 				2F4477812235E16500789167 /* LaunchScreen.storyboard */,
 				2F44777F2235E16500789167 /* Assets.xcassets */,
 				2F3E8EEB223C92FC00BF96A0 /* GoogleService-Info.plist */,
 				2F4477842235E16500789167 /* Info.plist */,
-				2F96A27F228130DE004AF805 /* UserIDManager.swift */,
-				2F96A28522865721004AF805 /* ProfileViewController.swift */,
 			);
 			path = InMyList;
+			sourceTree = "<group>";
+		};
+		2F4E8329232A1AE000546761 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F87A5072325C41A0026F088 /* Sign In */,
+				2F96A28522865721004AF805 /* ProfileViewController.swift */,
+				2FAFE4B2232A07730014F19A /* ItemsInAList */,
+				2FF938A32325C00800043C13 /* All List */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2F87A5072325C41A0026F088 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				2F87A5082325C41A0026F088 /* GoogleSignInHandler.swift */,
+				2F87A5092325C41A0026F088 /* SigninViewController.swift */,
+			);
+			name = "Sign In";
+			path = "../Sign In";
+			sourceTree = "<group>";
+		};
+		2FAFE4B1232A07610014F19A /* Model Layer */ = {
+			isa = PBXGroup;
+			children = (
+				2FEFE3DA228BAC4400FBAD2B /* UserListManager.swift */,
+				2F96A27F228130DE004AF805 /* UserIDManager.swift */,
+				2F87A50C2325CCAA0026F088 /* ListInfoModel.swift */,
+				2FAFE4AF232A07450014F19A /* ToDoItem.swift */,
+			);
+			path = "Model Layer";
+			sourceTree = "<group>";
+		};
+		2FAFE4B2232A07730014F19A /* ItemsInAList */ = {
+			isa = PBXGroup;
+			children = (
+				2FFE89E8223748080039985E /* ToDoItemCell.swift */,
+				2F44777A2235E16000789167 /* ItemsInAListDisplayContainer.swift */,
+				2FB3FEED2236DBD800284EBF /* ItemsInAListTableViewController.swift */,
+			);
+			name = ItemsInAList;
+			path = ../ItemsInAList;
+			sourceTree = "<group>";
+		};
+		2FF938A32325C00800043C13 /* All List */ = {
+			isa = PBXGroup;
+			children = (
+				2F87A5012325C22E0026F088 /* ListNameDisplayCell.swift */,
+				2FF9389B2325BE6700043C13 /* AllListContainerController.swift */,
+				2FF938A12325BFFC00043C13 /* AllListCollectionViewController.swift */,
+			);
+			name = "All List";
+			path = "../All List";
 			sourceTree = "<group>";
 		};
 		51A0EEACE2F96C61B8610039 /* Frameworks */ = {
@@ -269,18 +318,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F44777B2235E16000789167 /* ViewController.swift in Sources */,
-				2FB3FEEE2236DBD800284EBF /* TableViewController.swift in Sources */,
-				2F66FF11225194EE0001C3F0 /* AllListsHandler.swift in Sources */,
+				2FF938A22325BFFC00043C13 /* AllListCollectionViewController.swift in Sources */,
+				2F87A50D2325CCAA0026F088 /* ListInfoModel.swift in Sources */,
+				2FAFE4B0232A07450014F19A /* ToDoItem.swift in Sources */,
+				2FF938A02325BF5B00043C13 /* ItemsInAListTableViewController.swift in Sources */,
 				2F96A280228130DE004AF805 /* UserIDManager.swift in Sources */,
-				2FEE1214223F2C00008DF8F6 /* SigninViewController.swift in Sources */,
-				2FF2176A2237E01D00F60F4C /* ListItemManager.swift in Sources */,
+				2F87A50B2325C41A0026F088 /* SigninViewController.swift in Sources */,
+				2F87A50A2325C41A0026F088 /* GoogleSignInHandler.swift in Sources */,
 				2FEFE3DB228BAC4400FBAD2B /* UserListManager.swift in Sources */,
+				2FF9389F2325BF5900043C13 /* ItemsInAListDisplayContainer.swift in Sources */,
 				2F96A28622865721004AF805 /* ProfileViewController.swift in Sources */,
-				2FFE89E9223748080039985E /* CustomTableViewCell.swift in Sources */,
-				2FC10A752265608D00DFA823 /* AllListsHandlerWithFooter.swift in Sources */,
+				2FF9389C2325BE6700043C13 /* AllListContainerController.swift in Sources */,
+				2FFE89E9223748080039985E /* ToDoItemCell.swift in Sources */,
 				2F4477792235E16000789167 /* AppDelegate.swift in Sources */,
-				2F66FF1522519F3F0001C3F0 /* listNameDisplayCell.swift in Sources */,
+				2F87A5022325C22E0026F088 /* ListNameDisplayCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,8 +2,8 @@
 //  ProfileViewController.swift
 //  InMyList
 //
-//  Created by vignesh ramanathan on 5/10/19.
-//  Copyright © 2019 CK. All rights reserved.
+//  Created by shenbagavalli lakshmanan on 5/10/19.
+//  Copyright © 2019 Shenbagavalli Lakshmanan. All rights reserved.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ import Firebase
 import GoogleSignIn
 
 class ProfileViewController: UIViewController {
-
+    
     @IBOutlet weak var profilePicture: UIImageView!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var logout: UIButton!
@@ -27,12 +27,11 @@ class ProfileViewController: UIViewController {
         profilePicture.layer.masksToBounds = true
         
         userName.text = UserIDManager.sharedUserDetail.userGivenName + " " + UserIDManager.sharedUserDetail.userFamilyName
-    
+        
         if  let url = UserIDManager.sharedUserDetail.profilePicture,
             let data = try? Data(contentsOf: url)
         {
             profilePicture.image = UIImage(data: data)
-            print("Profile picture retrieved")
         }
     }
     
@@ -43,20 +42,19 @@ class ProfileViewController: UIViewController {
         //Signout from google
         GIDSignIn.sharedInstance()?.signOut()
         
-        print("signout complete")
-      //  let signinVC = self.storyboard?.instantiateViewController(withIdentifier: "SigninViewController") as! UIViewController
-       // navigationController?.present(signinVC, animated: true, completion: nil)
+        //  let signinVC = self.storyboard?.instantiateViewController(withIdentifier: "SigninViewController") as! UIViewController
+        // navigationController?.present(signinVC, animated: true, completion: nil)
         navigationController?.popToRootViewController(animated: true)
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
