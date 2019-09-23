@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ListInfoModel: Codable{
+struct ListInfoModel: Codable {
     var listName: String
     var dateCreated: String
     var status: String
@@ -46,7 +46,7 @@ struct ListInfoModel: Codable{
     func prettyPrinted() -> String {
         var prettyString = ""
          items.forEach { item in
-            prettyString += "\(item.name) :: \(item.quantity) \(item.unit)\n"
+            prettyString += "\(item.name) : \(item.quantity) \(item.unit)\n"
         }
         return prettyString
     }

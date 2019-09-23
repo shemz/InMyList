@@ -205,6 +205,7 @@
 				TargetAttributes = {
 					2F4477742235E16000789167 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -478,6 +479,8 @@
 			baseConfigurationReference = 7E7CF7939537B9AF0FE28E05 /* Pods-InMyList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N5HCJB29V5;
 				INFOPLIST_FILE = InMyList/Info.plist;
@@ -487,7 +490,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shenba.InMyList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -497,6 +501,8 @@
 			baseConfigurationReference = 8C3670A39DFD4FA3B9C4D4D0 /* Pods-InMyList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N5HCJB29V5;
 				INFOPLIST_FILE = InMyList/Info.plist;
@@ -506,7 +512,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shenba.InMyList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

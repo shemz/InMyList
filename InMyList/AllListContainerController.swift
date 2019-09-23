@@ -82,12 +82,7 @@ class AllListContainerController: UIViewController {
         alert.addAction(confirmDeleteAction)
         
         //define cancel action
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: { [weak self] (action) -> Void in
-          //You may not want to cancel the selection mode here. just dismissing the alert will do.
-//            self?.deleteButton.isHidden = true
-//            self?.selectButton.setTitle("Select", for: .normal)
-//            self?.multipleSelectionDelegate?.cancelSelection()
-        })
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
         alert.addAction(cancelAction)
         self.present(alert,animated: true)

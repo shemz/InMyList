@@ -16,6 +16,7 @@ class ListNameDisplayCell: UICollectionViewCell {
         listNameDisplayLabel.layer.cornerRadius = 10
         listNameDisplayLabel.clipsToBounds = true
         backgroundColor = UIColor.clear
+        listNameDisplayLabel.numberOfLines = 0
         listNameDisplayLabel.layer.borderColor = UIColor.gray.cgColor
         listNameDisplayLabel.layer.borderWidth = 3
     }

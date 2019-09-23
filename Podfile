@@ -10,5 +10,6 @@ target 'InMyList' do
     pod 'Firebase/Core', '4.0.3'
     pod 'Firebase/Database', '4.0.3'
     pod 'Firebase/Auth'
+    pod 'Firebase/Firestore'
     pod 'GoogleSignIn'
 end

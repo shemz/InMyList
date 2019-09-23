@@ -79,7 +79,7 @@
                     <navigationItem key="navigationItem" id="T2p-xc-iU8"/>
                     <connections>
                         <outlet property="customSignIn" destination="aMu-bw-nNh" id="ENY-Ma-pDp"/>
-                        <segue destination="TW8-SJ-wDk" kind="push" identifier="showListsWithFooter" id="GPI-WS-hzE"/>
+                        <segue destination="TW8-SJ-wDk" kind="show" identifier="showListsWithFooter" id="GPI-WS-hzE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2e-Lz-Opd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -104,38 +104,39 @@
                                 <rect key="frame" x="0.0" y="802" width="414" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhA-Ei-j4l" userLabel="Select">
-                                        <rect key="frame" x="334" y="10" width="70" height="40"/>
+                                        <rect key="frame" x="349" y="14" width="55" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="70" id="mry-Lc-dUA"/>
                                             <constraint firstAttribute="height" constant="40" id="yOA-k7-SFA"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Select">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="selectMultipleLists:" destination="TW8-SJ-wDk" eventType="touchUpInside" id="k2o-9r-Glo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4I-cL-u8E" userLabel="Add New List">
-                                        <rect key="frame" x="182" y="5" width="50" height="50"/>
+                                        <rect key="frame" x="183" y="10" width="48" height="48"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="nHr-je-ATE"/>
-                                            <constraint firstAttribute="height" constant="50" id="pcD-Ez-mhe"/>
+                                            <constraint firstAttribute="height" constant="48" id="8CM-Bq-82i"/>
+                                            <constraint firstAttribute="width" constant="48" id="WfY-Eo-Sb1"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="icons8-plus-24"/>
+                                        <state key="normal" image="plus-regular"/>
                                         <connections>
                                             <action selector="addNewItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tdz-gE-B7Q"/>
                                             <action selector="addNewList:" destination="TW8-SJ-wDk" eventType="touchUpInside" id="ZXM-Fd-8k5"/>
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Km2-81-V1c" userLabel="Delete">
-                                        <rect key="frame" x="273" y="10" width="40" height="40"/>
+                                        <rect key="frame" x="280" y="10" width="48" height="48"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="Lig-Cd-QfL"/>
+                                            <constraint firstAttribute="width" constant="48" id="CG7-tg-Kzg"/>
+                                            <constraint firstAttribute="height" constant="48" id="HY2-5R-VQb"/>
                                         </constraints>
-                                        <state key="normal" image="garbage-2091534_960_720">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="trash-alt-solid">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -143,13 +144,13 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAe-it-WzI" userLabel="Profile">
-                                        <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                        <rect key="frame" x="10" y="10" width="48" height="48"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="TO8-jK-iYV"/>
-                                            <constraint firstAttribute="height" constant="30" id="dUq-2y-p7Y"/>
+                                            <constraint firstAttribute="width" constant="48" id="T4X-Ix-YMS"/>
+                                            <constraint firstAttribute="height" constant="48" id="nR5-l6-Elc"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="user"/>
+                                        <state key="normal" image="user-solid"/>
                                         <connections>
                                             <action selector="getUserDetails:" destination="TW8-SJ-wDk" eventType="touchUpInside" id="A2q-kS-mDX"/>
                                         </connections>
@@ -158,14 +159,13 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="VAe-it-WzI" firstAttribute="leading" secondItem="MEB-9q-Z0j" secondAttribute="leading" constant="10" id="I6D-s7-O0a"/>
-                                    <constraint firstItem="Km2-81-V1c" firstAttribute="top" secondItem="MEB-9q-Z0j" secondAttribute="top" constant="10" id="IBp-jb-ZgF"/>
-                                    <constraint firstItem="bhA-Ei-j4l" firstAttribute="centerY" secondItem="MEB-9q-Z0j" secondAttribute="centerY" id="Jkv-eh-dBs"/>
-                                    <constraint firstAttribute="bottom" secondItem="Km2-81-V1c" secondAttribute="bottom" constant="10" id="SPw-LN-zwU"/>
                                     <constraint firstAttribute="height" constant="60" id="Ugg-va-2FG"/>
                                     <constraint firstItem="bhA-Ei-j4l" firstAttribute="leading" secondItem="Km2-81-V1c" secondAttribute="trailing" constant="21" id="afq-rl-sIj"/>
+                                    <constraint firstItem="B4I-cL-u8E" firstAttribute="centerY" secondItem="VAe-it-WzI" secondAttribute="centerY" id="azD-YI-SNl"/>
                                     <constraint firstItem="B4I-cL-u8E" firstAttribute="centerX" secondItem="MEB-9q-Z0j" secondAttribute="centerX" id="h0P-Wp-tL0"/>
                                     <constraint firstItem="VAe-it-WzI" firstAttribute="top" secondItem="MEB-9q-Z0j" secondAttribute="top" constant="10" id="hh7-Us-TP4"/>
-                                    <constraint firstItem="B4I-cL-u8E" firstAttribute="centerY" secondItem="MEB-9q-Z0j" secondAttribute="centerY" id="xUf-hY-fXc"/>
+                                    <constraint firstItem="bhA-Ei-j4l" firstAttribute="centerY" secondItem="VAe-it-WzI" secondAttribute="centerY" id="hqd-QR-wAB"/>
+                                    <constraint firstItem="Km2-81-V1c" firstAttribute="centerY" secondItem="VAe-it-WzI" secondAttribute="centerY" id="jER-t4-LYE"/>
                                     <constraint firstAttribute="trailing" secondItem="bhA-Ei-j4l" secondAttribute="trailing" constant="10" id="y5t-9H-w71"/>
                                 </constraints>
                             </view>
@@ -188,8 +188,8 @@
                         <outlet property="deleteButton" destination="Km2-81-V1c" id="BmJ-bh-aO6"/>
                         <outlet property="profileButton" destination="VAe-it-WzI" id="HXR-kv-9GU"/>
                         <outlet property="selectButton" destination="bhA-Ei-j4l" id="c47-fT-7yc"/>
-                        <segue destination="BYZ-38-t0r" kind="push" identifier="displayListDetails" id="Zoz-bR-QD4"/>
-                        <segue destination="8tE-3j-ze0" kind="push" identifier="presentUserDetails" id="UgC-KA-yqD"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="displayListDetails" id="Zoz-bR-QD4"/>
+                        <segue destination="8tE-3j-ze0" kind="show" identifier="presentUserDetails" id="UgC-KA-yqD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="27o-h8-ajY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -224,12 +224,12 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="100" id="esj-to-yEN"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
-                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tick" translatesAutoresizingMaskIntoConstraints="NO" id="8sR-rA-4KP" userLabel="Tick Image">
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-regular" translatesAutoresizingMaskIntoConstraints="NO" id="8sR-rA-4KP" userLabel="Tick Image">
                                             <rect key="frame" x="117" y="57" width="20" height="20"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="tintColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -277,7 +277,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="b4o-d8-vUq"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="push" identifier="displaySelectedListDetails" id="teM-Uh-w94"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="displaySelectedListDetails" id="teM-Uh-w94"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oMg-pg-7wE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -354,7 +354,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" image="icons8-plus-24"/>
+                                                <state key="normal" image="plus-regular"/>
                                                 <connections>
                                                     <action selector="addNewItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H0Y-c6-Ly1"/>
                                                 </connections>
@@ -366,7 +366,7 @@
                                                     <constraint firstAttribute="width" constant="35" id="yLO-g2-bQ0"/>
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" image="Share"/>
+                                                <state key="normal" image="share-solid"/>
                                                 <connections>
                                                     <action selector="shareList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZQG-SR-8d5"/>
                                                 </connections>
@@ -408,7 +408,7 @@
                             <constraint firstItem="d2R-en-QLx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8sh-xS-m53"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d2R-en-QLx" secondAttribute="bottom" id="F9m-YO-Lvv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d2R-en-QLx" secondAttribute="trailing" id="Pgd-av-4Mu"/>
-                            <constraint firstItem="d2R-en-QLx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pYo-F1-H4x"/>
+                            <constraint firstItem="d2R-en-QLx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cts-NT-I8w"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -562,11 +562,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Share" width="48" height="48"/>
-        <image name="garbage-2091534_960_720" width="720" height="720"/>
-        <image name="icons8-plus-24" width="24" height="24"/>
-        <image name="tick" width="512" height="512"/>
-        <image name="user" width="512" height="512"/>
+        <image name="check-regular" width="24" height="24"/>
+        <image name="plus-regular" width="24" height="24"/>
+        <image name="share-solid" width="24" height="24"/>
+        <image name="trash-alt-solid" width="24" height="24"/>
+        <image name="user-solid" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="teM-Uh-w94"/>

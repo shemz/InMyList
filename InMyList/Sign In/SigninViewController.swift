@@ -14,14 +14,14 @@ class SigninViewController: UIViewController, GIDSignInUIDelegate {
     
     @IBOutlet weak var customSignIn: UIButton!
     
-    var googleSignInHandler = GoogleSignInHandler()
+    var googleSignInHandler:GoogleSignInHandler!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        googleSignInHandler.onSuccessfulLogin = { [weak self] in
+        googleSignInHandler = GoogleSignInHandler(segueTo: { [weak self] in
             self?.performSegue(withIdentifier: "showListsWithFooter", sender: self)
-        }
+        })
         
         GIDSignIn.sharedInstance()?.uiDelegate = self
         GIDSignIn.sharedInstance()?.delegate = googleSignInHandler

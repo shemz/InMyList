@@ -20,7 +20,7 @@ class ItemsInAListTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = UITableView.automaticDimension
-        UserListManager.sharedUserLists.observerDataFromDB (onFetchComplete: nil)
+        
         UserListManager.sharedUserLists.observeItemsIn(selectedListName: selectedListName) { [weak self] in
             self?.selectedListInfoModel = UserListManager.sharedUserLists.listInfoModels.first {
                 $0.listName == self?.selectedListName

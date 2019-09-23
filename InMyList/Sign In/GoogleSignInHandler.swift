@@ -16,6 +16,11 @@ class GoogleSignInHandler:NSObject, GIDSignInDelegate {
     var userID: String = ""
     var onSuccessfulLogin:(()->Void)? = nil
     
+    convenience init(segueTo:@escaping ()->Void) {
+        self.init()
+        self.onSuccessfulLogin = segueTo
+    }
+    
     //Should display error to user...
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
         if error != nil{
